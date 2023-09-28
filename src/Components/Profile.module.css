@@ -1,0 +1,17 @@
+.wrap {
+  width: 1170px;
+  height: 450px;
+}
+.mainImg {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.avatar {
+  width: 150px;
+}
+
+.profile {
+  grid-area: s;
+  background-color: blueviolet;
+}

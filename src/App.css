@@ -12,32 +12,3 @@
 ul {
   list-style: none;
 }
-.head {
-  grid-area: h;
-  background-color: aqua;
-}
-.nav {
-  grid-area: n;
-  background-color: blue;
-}
-.section {
-  grid-area: s;
-  background-color: blueviolet;
-}
-
-.logo {
-  width: 50px;
-}
-.main-img-wrap{
-  width: 1170px;
-  height: 450px;
-}
-.main-img {
-height: 450px;
-width: 100%;
-object-fit:cover;
-}
-.avatar{
-  width: 150px;
-  
-}
