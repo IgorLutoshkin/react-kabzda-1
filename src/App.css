@@ -12,3 +12,8 @@
 ul {
   list-style: none;
 }
+
+.app-wrap {
+  grid-area: s;
+  background-color: blueviolet;
+}
