@@ -1,0 +1,16 @@
+.wrap {
+	width: 1170px;
+	height: 450px;
+}
+
+.mainImg {
+	height: 450px;
+	width: 100%;
+	object-fit: cover;
+}
+
+.avatar {
+	padding-top:  10px;
+	display: block;
+	width: 150px;
+}
