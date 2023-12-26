@@ -12,7 +12,6 @@ import Setting from "./Components/Setting/Setting";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = (props) => {
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -20,18 +19,27 @@ const App = (props) => {
         <Navbar />
         <div class="app-wrap">
           <Routes>
-            <Route path="/dialogs/*" element={<Dialogs />} />
-            <Route path="/profile" element={<Profile />} />
+            <Route
+              path="/dialogs/*"
+              element={
+                <Dialogs
+                  dialogArr={props.dialogArr}
+                  messageArr={props.messageArr}
+                />
+              }
+            />
+            <Route
+              path="/profile"
+              element={<Profile postArr={props.postArr} />}
+            />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />
             <Route path="/setting" element={<Setting />} />
           </Routes>
-        </div >
-      </div >
+        </div>
+      </div>
     </BrowserRouter>
-
-  )
-
+  );
 };
 
 export default App;

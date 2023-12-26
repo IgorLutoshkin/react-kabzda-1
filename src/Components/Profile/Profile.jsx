@@ -4,10 +4,10 @@ import MyPost from "./MyPost/MyPost"
 import ProfileInfo from "./ProfileInfo/ProfileInfo"
 
 
-const Profile = () => {
+const Profile = (props) => {
 	return <section className={style.profile_wrap}>
 		<ProfileInfo />
-		<MyPost />
+		<MyPost postArr = {props.postArr} />
 
 	</section>
 }
