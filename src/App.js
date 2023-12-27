@@ -23,14 +23,14 @@ const App = (props) => {
               path="/dialogs/*"
               element={
                 <Dialogs
-                  dialogArr={props.dialogArr}
-                  messageArr={props.messageArr}
+                  state={props.state.dialogPage}
+                  
                 />
               }
             />
             <Route
               path="/profile"
-              element={<Profile postArr={props.postArr} />}
+              element={<Profile state={props.state.profilePage} />}
             />
             <Route path="/news" element={<News />} />
             <Route path="/music" element={<Music />} />

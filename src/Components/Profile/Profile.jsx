@@ -7,7 +7,7 @@ import ProfileInfo from "./ProfileInfo/ProfileInfo"
 const Profile = (props) => {
 	return <section className={style.profile_wrap}>
 		<ProfileInfo />
-		<MyPost postArr = {props.postArr} />
+		<MyPost postArr = {props.state.postArr} />
 
 	</section>
 }

@@ -5,8 +5,8 @@ import style from './Dialogs.module.css'
 
 const Dialogs = (props) => {
 
-	let dialogName = props.dialogArr.map(d => (<DialogItem name={d.name} id={d.id} />))
-	let messageName = props.messageArr.map(m => (<MessageItem message={m.message} />))
+	let dialogName = props.state.dialogArr.map(d => (<DialogItem name={d.name} id={d.id} />))
+	let messageName = props.state.messageArr.map(m => (<MessageItem message={m.message} />))
 	/* [
 		<DialogItem name={dialogArr[0].name} id={dialogArr[0].id} />,
 		<DialogItem name={dialogArr[1].name} id={dialogArr[1].id} />,
